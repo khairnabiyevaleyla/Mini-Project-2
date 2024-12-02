@@ -1,1 +1,211 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#header {
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+  padding: 20px;
+}
+#header .nav_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+#header .nav_list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 50px;
+}
+#header .nav_list ul li a {
+  color: #0c0407;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+#header .nav_list ul li a i {
+  font-size: 18px;
+  font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+}
+#header .nav_list ul .page_menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#header .nav_list ul .page_menu .dropdown_menu {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+  box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid #f7f7f7;
+  border-radius: 6px;
+  top: 50px;
+  left: 3px;
+  width: 120px;
+  padding: 10px 20px;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#header .nav_list ul .page_menu .dropdown_menu li {
+  padding: 10px;
+}
+#header .nav_list ul .page_menu .dropdown_menu li a {
+  font-size: 14px;
+}
+#header .nav_list ul .page_menu .dropdown_menu li:hover {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+#header .nav_list ul .page_menu:hover .dropdown_menu {
+  opacity: 1;
+  visibility: visible;
+  top: 30px;
+}
+#header .nav_list ul .page_menu:hover .ri-arrow-down-s-line {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=style.css.map */
