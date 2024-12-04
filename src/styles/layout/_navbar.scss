@@ -1,6 +1,6 @@
 #header {
   font-family: $default_font;
-  margin-top: 20px;
+
   padding: 20px;
   .nav_list {
     @include Flexible(center, center, row, nowrap, 40px);
@@ -35,7 +35,10 @@
           width: 120px;
           padding: 10px 20px;
           visibility: hidden;
+          opacity: 0;
           transition: all 0.3s ease-in-out;
+          background-color: white;
+          z-index: 999;
           li {
             padding: 10px;
             a {
@@ -51,6 +54,7 @@
         &:hover .dropdown_menu {
           opacity: 1;
           visibility: visible;
+
           top: 30px;
         }
         &:hover .ri-arrow-down-s-line {
