@@ -59,4 +59,9 @@
       }
     }
   }
+  .explore_btn {
+    a {
+      @extend %black_btn;
+    }
+  }
 }
