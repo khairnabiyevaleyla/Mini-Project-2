@@ -1,47 +1,47 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'featured_properties',
+  name: 'featuredproperties',
   title: 'Featured properties',
   type: 'document',
   fields: [
     defineField({
-      name: 'properties_name',
+      name: 'propertiesName',
       title: 'Properties name',
       type: 'string',
     }),
     defineField({
-      name: 'properties_address',
+      name: 'propertiesAddress',
       title: 'Properties address',
       type: 'string',
     }),
     defineField({
-      name: 'properties_tag',
+      name: 'propertiesTag',
       title: 'Properties tag',
       type: 'string',
     }),
     defineField({
-      name: 'properties_price',
+      name: 'propertiesPrice',
       title: 'Properties price',
       type: 'string',
     }),
     defineField({
-      name: 'properties_area',
+      name: 'propertiesArea',
       title: 'Properties area',
       type: 'string',
     }),
     defineField({
-      name: 'properties_rooms_count',
+      name: 'propertiesRoomsCount',
       title: 'Properties rooms count',
       type: 'string',
     }),
     defineField({
-      name: 'properties_bathrooms_count',
+      name: 'propertiesBathroomsCount',
       title: 'Properties bathrooms count',
       type: 'string',
     }),
     defineField({
-      name: 'properties_garage_counts',
+      name: 'propertiesGarageCounts',
       title: 'Properties garage counts',
       type: 'string',
     }),
@@ -64,12 +64,4 @@ export default defineType({
       },
     }),
   ],
-
-  preview: {
-    select: {
-      title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
-    },
-  },
 })

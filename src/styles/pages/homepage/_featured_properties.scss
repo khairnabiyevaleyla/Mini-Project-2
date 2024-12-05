@@ -86,4 +86,10 @@
       }
     }
   }
+  .explore_btn {
+    margin-top: 50px;
+    a {
+      @extend %black_btn;
+    }
+  }
 }

@@ -137,7 +137,7 @@ table {
      object-fit: cover;
 }
 
-#header .explore_btn a {
+#featured_properties .explore_btn a, #header .explore_btn a {
   display: inline-block;
   position: relative;
   background-color: black;
@@ -149,7 +149,7 @@ table {
   text-decoration: none;
   overflow: hidden;
 }
-#header .explore_btn a::before {
+#featured_properties .explore_btn a::before, #header .explore_btn a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,14 +160,14 @@ table {
   z-index: 1;
   transition: 0.2s ease-in-out;
 }
-#header .explore_btn a span {
+#featured_properties .explore_btn a span, #header .explore_btn a span {
   position: relative;
   z-index: 1;
 }
-#header .explore_btn a:hover {
+#featured_properties .explore_btn a:hover, #header .explore_btn a:hover {
   color: #ffffff;
 }
-#header .explore_btn a:hover::before {
+#featured_properties .explore_btn a:hover::before, #header .explore_btn a:hover::before {
   width: 100%;
 }
 
@@ -395,4 +395,7 @@ table {
 }
 #featured_properties .propertie_card__body ul li i {
   font-size: 16px;
+}
+#featured_properties .explore_btn {
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
