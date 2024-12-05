@@ -24,7 +24,7 @@ async function getAPIdata(featuredQuery, cb) {
     .then((res) => res.json())
     .then((res) => cb(res.result));
 }
-
+////// featured_properties
 const dataCards = document.querySelector(".data-featured-cards");
 const renderFeaturedCards = (cards) => {
   cards &&
@@ -56,6 +56,7 @@ const renderFeaturedCards = (cards) => {
                         </div>`;
     });
 };
+//////featured_properties
 
 getAPIdata(dataQuery.featuredproperties, (data) => {
   renderFeaturedCards(data);
