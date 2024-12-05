@@ -1,0 +1,89 @@
+#featured_properties {
+  font-family: $default_font;
+  margin-top: 50px;
+  padding-top: 30px;
+  .featured_properties_header {
+    button {
+      @extend %heading_btn;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .featured_properties_title {
+    margin-top: 20px;
+    h3 {
+      font-size: 48px;
+      font-weight: 600;
+      color: $primary_color;
+      letter-spacing: -0.3px;
+      line-height: 112%;
+    }
+  }
+  .propertie_card {
+    margin-top: 30px;
+    width: 380px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    &__top {
+      &__img {
+        transition: 0.5s ease-in-out;
+        a {
+          img {
+            @extend %base_img;
+            border-radius: 20px;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    &__body {
+      position: relative;
+      color: $primary_color;
+      &__tag {
+        position: absolute;
+        bottom: 360px;
+        left: 20px;
+        @include Flexible(space-between, center, row, nowrap, 170px);
+        span {
+          font-size: 14px;
+          background-color: #ffffff;
+          padding: 0 12px;
+          text-transform: capitalize;
+          font-weight: 500;
+          border-radius: 20px;
+        }
+      }
+      p {
+        margin-top: 10px;
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+      span {
+        font-size: 14px;
+        line-height: 28px;
+        color: #14161c;
+        i {
+          font-size: 18px;
+        }
+      }
+      ul {
+        @include Flexible(flex-start, start, row, nowrap, 5px);
+        padding-top: 5px;
+        li {
+          font-size: 14px;
+          font-weight: 500;
+          border: 1px solid #efefef;
+          padding: 10px 16px;
+          border-radius: 6px;
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

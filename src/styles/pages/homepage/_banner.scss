@@ -6,6 +6,9 @@
       @extend %heading_btn;
       i {
         font-size: 20px;
+        @media (max-width: 748px) {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -17,6 +20,9 @@
       font-weight: 600;
       color: $primary_color;
       letter-spacing: -0.08em;
+      @media (max-width: 748px) {
+        font-size: 60px;
+      }
     }
   }
   .banner_img {

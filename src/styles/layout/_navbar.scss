@@ -1,7 +1,9 @@
 #header {
   font-family: $default_font;
-
-  padding: 20px;
+  margin-top: 20px;
+  @media (max-width: 948px) {
+    display: none;
+  }
   .nav_list {
     @include Flexible(center, center, row, nowrap, 40px);
     ul {
