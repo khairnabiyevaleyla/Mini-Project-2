@@ -1,0 +1,79 @@
+#statistics {
+  font-family: $default_font;
+  margin-top: 50px;
+  .statistics_body {
+    width: 540px;
+    height: 450px;
+    padding: 0 35px;
+    @media (max-width: 748px) {
+      padding: 10px;
+    }
+    @media (max-width: 748px) {
+      width: 340px;
+      height: 250px;
+    }
+    .statistics_heading {
+      margin: 20px 0 20px 0;
+      button {
+        @extend %heading_btn;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      @media (max-width: 748px) {
+        margin-top: 100px;
+      }
+    }
+    .statistics_title {
+      margin-bottom: 10px;
+      @media (max-width: 748px) {
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 48px;
+        color: $primary_color;
+        font-weight: 600;
+        @media (max-width: 748px) {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .statistics_btn {
+      margin-top: 30px;
+      a {
+        @extend %black_btn;
+      }
+    }
+  }
+  .statistics_container {
+    @include Flexible(center, center, row, wrap, 10px);
+    @media (max-width: 748px) {
+      margin-top: 60px;
+    }
+    .statistics_cards {
+      width: 260px;
+      height: 260px;
+      background-color: $secondary_color;
+      border: 1px solid #e8e8e8;
+      padding: 25px;
+      border-radius: 20px;
+
+      h3 {
+        font-size: 36px;
+        color: $primary_color;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      span {
+        font-size: 14px;
+        color: $body_color;
+      }
+      p {
+        margin-top: 25px;
+        font-size: 14px;
+        color: $body_color;
+        line-height: 22px;
+      }
+    }
+  }
+}

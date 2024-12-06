@@ -17,7 +17,8 @@ let dataQuery = {
   propertiesTag, propertiesPrice, propertiesArea,
   propertiesRoomsCount, propertiesBathroomsCount, propertiesGarageCounts, mainImage{asset->{url}},}
  `,
-  propertycategories: ` *[_type=="propertycategories"]{categoriesName,categoriesText, mainImage{asset->{url}},}`,
+  propertycategories: ` *[_type=="propertycategories"]{categoriesName, categoriesText, mainImage{asset->{url}},}`,
+  statistics: ` *[_type=="statistics"]{statisticsTitle, statisticsNumber, statisticsText,}`,
 };
 
 //////querys
@@ -103,3 +104,24 @@ getAPIdata(dataQuery.propertycategories, (data) => {
 });
 
 ///////property_categories
+
+///////statistics
+
+const dataStatistics = document.querySelector(".data-statistics");
+
+const renderStatistics = (cards) => {
+  cards &&
+    cards.forEach((card) => {
+      dataStatistics.innerHTML += `  <div class="statistics_cards">
+                                <h3>${card.statisticsNumber}</h3>
+                                <span>${card.statisticsTitle}</span>
+                                <p>${card.statisticsText}</p>
+                            </div>`;
+    });
+};
+
+getAPIdata(dataQuery.statistics, (data) => {
+  renderStatistics(data);
+});
+
+///////statistics

@@ -137,7 +137,7 @@ table {
      object-fit: cover;
 }
 
-#choose_us .choose_body .choose_btn a, #about_us .about_body .about_btn a, #featured_properties .explore_btn a, #header .explore_btn a {
+#statistics .statistics_body .statistics_btn a, #choose_us .choose_body .choose_btn a, #about_us .about_body .about_btn a, #featured_properties .explore_btn a, #header .explore_btn a {
   display: inline-block;
   position: relative;
   background-color: black;
@@ -149,7 +149,7 @@ table {
   text-decoration: none;
   overflow: hidden;
 }
-#choose_us .choose_body .choose_btn a::before, #about_us .about_body .about_btn a::before, #featured_properties .explore_btn a::before, #header .explore_btn a::before {
+#statistics .statistics_body .statistics_btn a::before, #choose_us .choose_body .choose_btn a::before, #about_us .about_body .about_btn a::before, #featured_properties .explore_btn a::before, #header .explore_btn a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,18 +160,18 @@ table {
   z-index: 1;
   transition: 0.2s ease-in-out;
 }
-#choose_us .choose_body .choose_btn a span, #about_us .about_body .about_btn a span, #featured_properties .explore_btn a span, #header .explore_btn a span {
+#statistics .statistics_body .statistics_btn a span, #choose_us .choose_body .choose_btn a span, #about_us .about_body .about_btn a span, #featured_properties .explore_btn a span, #header .explore_btn a span {
   position: relative;
   z-index: 1;
 }
-#choose_us .choose_body .choose_btn a:hover, #about_us .about_body .about_btn a:hover, #featured_properties .explore_btn a:hover, #header .explore_btn a:hover {
+#statistics .statistics_body .statistics_btn a:hover, #choose_us .choose_body .choose_btn a:hover, #about_us .about_body .about_btn a:hover, #featured_properties .explore_btn a:hover, #header .explore_btn a:hover {
   color: #ffffff;
 }
-#choose_us .choose_body .choose_btn a:hover::before, #about_us .about_body .about_btn a:hover::before, #featured_properties .explore_btn a:hover::before, #header .explore_btn a:hover::before {
+#statistics .statistics_body .statistics_btn a:hover::before, #choose_us .choose_body .choose_btn a:hover::before, #about_us .about_body .about_btn a:hover::before, #featured_properties .explore_btn a:hover::before, #header .explore_btn a:hover::before {
   width: 100%;
 }
 
-#choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -616,4 +616,95 @@ table {
     width: 340px;
     height: 250px;
   }
+}
+
+#statistics {
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+}
+#statistics .statistics_body {
+  width: 540px;
+  height: 450px;
+  padding: 0 35px;
+}
+@media (max-width: 748px) {
+  #statistics .statistics_body {
+    padding: 10px;
+  }
+}
+@media (max-width: 748px) {
+  #statistics .statistics_body {
+    width: 340px;
+    height: 250px;
+  }
+}
+#statistics .statistics_body .statistics_heading {
+  margin: 20px 0 20px 0;
+}
+#statistics .statistics_body .statistics_heading button {
+  font-weight: 400;
+  font-size: 14px;
+}
+@media (max-width: 748px) {
+  #statistics .statistics_body .statistics_heading {
+    margin-top: 100px;
+  }
+}
+#statistics .statistics_body .statistics_title {
+  margin-bottom: 10px;
+}
+@media (max-width: 748px) {
+  #statistics .statistics_body .statistics_title {
+    margin-bottom: 20px;
+  }
+}
+#statistics .statistics_body .statistics_title h3 {
+  font-size: 48px;
+  color: #0c0407;
+  font-weight: 600;
+}
+@media (max-width: 748px) {
+  #statistics .statistics_body .statistics_title h3 {
+    font-size: 32px;
+  }
+}
+#statistics .statistics_body .statistics_btn {
+  margin-top: 30px;
+}
+#statistics .statistics_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 748px) {
+  #statistics .statistics_container {
+    margin-top: 60px;
+  }
+}
+#statistics .statistics_container .statistics_cards {
+  width: 260px;
+  height: 260px;
+  background-color: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  padding: 25px;
+  border-radius: 20px;
+}
+#statistics .statistics_container .statistics_cards h3 {
+  font-size: 36px;
+  color: #0c0407;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#statistics .statistics_container .statistics_cards span {
+  font-size: 14px;
+  color: #333;
+}
+#statistics .statistics_container .statistics_cards p {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
 }/*# sourceMappingURL=style.css.map */
