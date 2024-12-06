@@ -3,6 +3,7 @@ import featuredproperties from './featuredproperties'
 import propertycategories from './propertycategories'
 import statistics from './statistics'
 import agents from './agents'
+import testimonials from './testimonials'
 
 export const schemaTypes = [
   featuredproperties,
@@ -10,4 +11,5 @@ export const schemaTypes = [
   blockContent,
   statistics,
   agents,
+  testimonials,
 ]

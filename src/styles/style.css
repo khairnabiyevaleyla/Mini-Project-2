@@ -130,7 +130,7 @@ table {
   border-spacing: 0;
 }
 
-#our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
+#testimonials .testimonials_cards .testimonial__card__img img, #our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -171,7 +171,7 @@ table {
   width: 100%;
 }
 
-#agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -884,4 +884,109 @@ table {
      object-fit: cover;
   border-radius: 20px;
   transition: 0.5s ease-in-out;
+}
+
+#testimonials {
+  font-family: "Inter", sans-serif;
+  margin-top: 60px;
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+#testimonials .testimonials_header button {
+  font-weight: 400;
+  font-size: 14px;
+}
+#testimonials .testimonials_title {
+  margin-top: 20px;
+}
+#testimonials .testimonials_title h3 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0c0407;
+  letter-spacing: -0.3px;
+}
+@media (max-width: 748px) {
+  #testimonials .testimonials_title h3 {
+    font-size: 32px;
+  }
+}
+#testimonials .testimonials_cards {
+  box-shadow: 0 32px 96px -28px rgba(0, 0, 0, 0.1215686275);
+  border: 0.74px solid #e8e8e8;
+  border-radius: 28px;
+  padding: 60px 60px 40px 60px;
+  margin-top: 30px;
+  width: 820px;
+  height: 330px;
+}
+#testimonials .testimonials_cards .testimonial__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+#testimonials .testimonials_cards .testimonial__card__content {
+  color: #0c0407;
+  text-align: start;
+}
+#testimonials .testimonials_cards .testimonial__card__content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#testimonials .testimonials_cards .testimonial__card__content p {
+  font-size: 14px;
+  line-height: 18px;
+}
+#testimonials .testimonials_cards .testimonial__card__content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+#testimonials .testimonials_cards .testimonial__card__content span {
+  font-size: 14px;
+  color: #333333;
+}
+#testimonials .testimonials_cards .testimonial__card__img img {
+  border-radius: 24px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #0c0407;
 }/*# sourceMappingURL=style.css.map */
