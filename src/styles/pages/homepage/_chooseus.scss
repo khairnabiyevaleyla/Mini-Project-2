@@ -1,18 +1,18 @@
-#about_us {
+#choose_us {
   font-family: $default_font;
   margin-top: 80px;
-  .about_body {
+  .choose_body {
     width: 540px;
     height: 450px;
 
     @media (max-width: 748px) {
-      padding: 20px;
+      padding: 10px;
     }
     @media (max-width: 748px) {
       width: 340px;
       height: 250px;
     }
-    .about_heading {
+    .choose_heading {
       margin: 20px 0 20px 0;
       button {
         @extend %heading_btn;
@@ -20,7 +20,7 @@
         font-size: 14px;
       }
     }
-    .about_title {
+    .choose_title {
       margin-bottom: 100px;
       @media (max-width: 748px) {
         margin-bottom: 20px;
@@ -34,7 +34,7 @@
         }
       }
     }
-    .about_content {
+    .choose_content {
       p {
         font-size: 14px;
         color: #333333;
@@ -43,17 +43,17 @@
         font-weight: 400;
       }
     }
-    .about_btn {
+    .choose_btn {
       margin-top: 20px;
       a {
         @extend %black_btn;
       }
     }
   }
-  .about_img {
+  .choose_img {
     padding: 40px;
     @media (max-width: 748px) {
-      padding: 20px;
+      padding: 10px;
     }
     img {
       width: 540px;
@@ -63,7 +63,6 @@
       @media (max-width: 748px) {
         width: 340px;
         height: 250px;
-        margin-top: 100px;
       }
     }
   }
