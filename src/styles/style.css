@@ -130,14 +130,14 @@ table {
   border-spacing: 0;
 }
 
-#testimonials .testimonials_cards .testimonial__card__img img, #our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
+#articles .articles__cards__top__img img, #testimonials .testimonials_cards .testimonial__card__img img, #our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#statistics .statistics_body .statistics_btn a, #choose_us .choose_body .choose_btn a, #about_us .about_body .about_btn a, #featured_properties .explore_btn a, #header .explore_btn a {
+#articles .articles_head .articles_btn a, #statistics .statistics_body .statistics_btn a, #choose_us .choose_body .choose_btn a, #about_us .about_body .about_btn a, #featured_properties .explore_btn a, #header .explore_btn a {
   display: inline-block;
   position: relative;
   background-color: black;
@@ -149,7 +149,7 @@ table {
   text-decoration: none;
   overflow: hidden;
 }
-#statistics .statistics_body .statistics_btn a::before, #choose_us .choose_body .choose_btn a::before, #about_us .about_body .about_btn a::before, #featured_properties .explore_btn a::before, #header .explore_btn a::before {
+#articles .articles_head .articles_btn a::before, #statistics .statistics_body .statistics_btn a::before, #choose_us .choose_body .choose_btn a::before, #about_us .about_body .about_btn a::before, #featured_properties .explore_btn a::before, #header .explore_btn a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,18 +160,18 @@ table {
   z-index: 1;
   transition: 0.2s ease-in-out;
 }
-#statistics .statistics_body .statistics_btn a span, #choose_us .choose_body .choose_btn a span, #about_us .about_body .about_btn a span, #featured_properties .explore_btn a span, #header .explore_btn a span {
+#articles .articles_head .articles_btn a span, #statistics .statistics_body .statistics_btn a span, #choose_us .choose_body .choose_btn a span, #about_us .about_body .about_btn a span, #featured_properties .explore_btn a span, #header .explore_btn a span {
   position: relative;
   z-index: 1;
 }
-#statistics .statistics_body .statistics_btn a:hover, #choose_us .choose_body .choose_btn a:hover, #about_us .about_body .about_btn a:hover, #featured_properties .explore_btn a:hover, #header .explore_btn a:hover {
+#articles .articles_head .articles_btn a:hover, #statistics .statistics_body .statistics_btn a:hover, #choose_us .choose_body .choose_btn a:hover, #about_us .about_body .about_btn a:hover, #featured_properties .explore_btn a:hover, #header .explore_btn a:hover {
   color: #ffffff;
 }
-#statistics .statistics_body .statistics_btn a:hover::before, #choose_us .choose_body .choose_btn a:hover::before, #about_us .about_body .about_btn a:hover::before, #featured_properties .explore_btn a:hover::before, #header .explore_btn a:hover::before {
+#articles .articles_head .articles_btn a:hover::before, #statistics .statistics_body .statistics_btn a:hover::before, #choose_us .choose_body .choose_btn a:hover::before, #about_us .about_body .about_btn a:hover::before, #featured_properties .explore_btn a:hover::before, #header .explore_btn a:hover::before {
   width: 100%;
 }
 
-#testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,13 +183,13 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
 }
 
-#property_categories .property_categories__card__body__btn a {
+#articles .articles__cards__body__btn a, #property_categories .property_categories__card__body__btn a {
   text-decoration: none;
   font-size: 14px;
   color: #0c0407;
@@ -511,6 +511,7 @@ table {
   margin-top: 50px;
   width: 380px;
   height: 450px;
+  cursor: pointer;
   overflow: hidden;
 }
 #property_categories .property_categories__card__top {
@@ -1026,4 +1027,85 @@ table {
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #0c0407;
+}
+
+#articles {
+  font-family: "Inter", sans-serif;
+  margin-top: 100px;
+  padding: 20px;
+}
+#articles .articles_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+@media (max-width: 748px) {
+  #articles .articles_head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+#articles .articles_head .articles_heading h3 {
+  margin-top: 20px;
+  font-size: 48px;
+  color: #0c0407;
+  font-weight: 600;
+}
+@media (max-width: 748px) {
+  #articles .articles_head .articles_heading h3 {
+    font-size: 32px;
+  }
+}
+#articles .articles__cards {
+  margin-top: 50px;
+  width: 380px;
+  height: 480px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#articles .articles__cards__top {
+  overflow: hidden;
+  border-radius: 20px;
+}
+#articles .articles__cards__top__img {
+  transition: 0.5s ease-in-out;
+}
+#articles .articles__cards__top__img img {
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+#articles .articles__cards:hover img {
+  transform: scale(1.1);
+}
+#articles .articles__cards__body__text {
+  color: #0c0407;
+}
+#articles .articles__cards__body__text h4 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+#articles .articles__cards__body__text ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+#articles .articles__cards__body__text ul li {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 500;
+}
+#articles .articles__cards__body__btn {
+  padding: 30px 0;
 }/*# sourceMappingURL=style.css.map */

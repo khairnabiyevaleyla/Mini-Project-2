@@ -21,6 +21,7 @@ let dataQuery = {
   statistics: ` *[_type=="statistics"]{statisticsTitle, statisticsNumber, statisticsText,}`,
   agents: ` *[_type=="agents"]{agentName, agentPosition, agentImage{asset->{url}},}`,
   testimonials: ` *[_type=="testimonials"]{customerName, testimonialsTitle, testimonialsText, customerAddress, customerImage{asset->{url}},}`,
+  articles: ` *[_type=="articles"]{articlesName, articlesDate, articlesDuration, articlesImage{asset->{url}},}`,
 };
 
 //////querys
@@ -235,3 +236,40 @@ getAPIdata(dataQuery.testimonials, (data) => {
   });
 });
 /////testimonials
+
+///////articles
+const dataArticlesCards = document.querySelector(".data-articles-cards");
+
+const renderArticlesCards = (cards) => {
+  cards &&
+    cards.forEach((card) => {
+      dataArticlesCards.innerHTML += ` <div class="col-xl-4 col-sm-12 d-flex">
+                        <div class="articles__cards">
+                            <div class="articles__cards__top">
+                                <div class="articles__cards__top__img">
+                                    <img
+                                        src="${card.articlesImage.asset.url}">
+                                </div>
+                            </div>
+                            <div class="articles__cards__body">
+                                <div class="articles__cards__body__text">
+                                    <h4>${card.articlesName}</h4>
+                                    <ul>
+                                        <li><i class="ri-calendar-2-line"></i> ${card.articlesDate}</li>
+                                        <li><i class="ri-time-line"></i> ${card.articlesDuration}</li>
+                                    </ul>
+                                </div>
+                                <div class="articles__cards__body__btn">
+                                    <div class="articles_btn">
+                                        <a href="#"><span>Read more</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+    });
+};
+
+getAPIdata(dataQuery.articles, (data) => {
+  renderArticlesCards(data);
+});
