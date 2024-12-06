@@ -30,28 +30,47 @@
     margin-top: 30px;
     width: 820px;
     height: 330px;
+    @media (max-width: 748px) {
+      padding: 40px 40px 20px 40px;
+    }
     .testimonial__card {
       @include Flexible(center, center, row, nowrap, 20px);
+
       &__content {
         color: $primary_color;
         text-align: start;
+
         h2 {
           font-size: 24px;
           font-weight: 500;
           margin-bottom: 20px;
+          @media (max-width: 748px) {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
         }
         p {
           font-size: 14px;
           line-height: 18px;
+          @media (max-width: 748px) {
+            font-size: 10px;
+          }
         }
         h3 {
           font-size: 24px;
           font-weight: 500;
           margin-top: 40px;
+          @media (max-width: 748px) {
+            font-size: 14px;
+            margin-top: 10px;
+          }
         }
         span {
           font-size: 14px;
           color: #333333;
+          @media (max-width: 748px) {
+            font-size: 12px;
+          }
         }
       }
       &__img {

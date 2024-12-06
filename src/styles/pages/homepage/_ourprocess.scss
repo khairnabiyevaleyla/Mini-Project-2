@@ -3,6 +3,9 @@
   margin-top: 50px;
   padding-top: 40px;
   margin-bottom: 20px;
+  @media (max-width: 748px) {
+    margin-top: 20px;
+  }
   .our_process_header {
     button {
       @extend %heading_btn;
@@ -60,6 +63,7 @@
   }
   .our_process_content {
     text-align: start;
+
     p {
       font-size: 14px;
       color: #333333;

@@ -174,16 +174,22 @@ const renderAgentsCards = (cards) => {
 
 getAPIdata(dataQuery.agents, (data) => {
   renderAgentsCards(data);
+  var swiper = new Swiper(".agent_card", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      748: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
 });
 
-var swiper = new Swiper(".agent_card", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-});
 ////agent
 
 /////testimonials
