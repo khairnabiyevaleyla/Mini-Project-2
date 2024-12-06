@@ -1,0 +1,71 @@
+#agents {
+  font-family: $default_font;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .agents_header {
+    button {
+      @extend %heading_btn;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .agents_title {
+    margin-top: 20px;
+    h3 {
+      font-size: 48px;
+      font-weight: 600;
+      color: $primary_color;
+      letter-spacing: -0.3px;
+      @media (max-width: 748px) {
+        font-size: 32px;
+      }
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @include Flexible(center, start, column, nowrap, 0);
+
+    .agent_img {
+      overflow: hidden;
+      border-radius: 20px;
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+    .agent_text {
+      margin-top: 10px;
+      text-align: start;
+      line-height: 28px;
+      h4 {
+        font-size: 24px;
+        color: $primary_color;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14px;
+        color: $primary_color;
+      }
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+  }
+}

@@ -19,6 +19,7 @@ let dataQuery = {
  `,
   propertycategories: ` *[_type=="propertycategories"]{categoriesName, categoriesText, mainImage{asset->{url}},}`,
   statistics: ` *[_type=="statistics"]{statisticsTitle, statisticsNumber, statisticsText,}`,
+  agents: ` *[_type=="agents"]{agentName, agentPosition, agentImage{asset->{url}},}`,
 };
 
 //////querys
@@ -149,3 +150,37 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //////scoll
+
+////agent
+
+const dataAgentsCards = document.querySelector(".data_agents_cards");
+
+const renderAgentsCards = (cards) => {
+  cards &&
+    cards.forEach((card) => {
+      dataAgentsCards.innerHTML += `<div class="swiper-slide">
+                                    <div class="agent_img">
+                                        <img
+                                            src="${card.agentImage.asset.url}">
+                                    </div>
+                                    <div class="agent_text">
+                                        <h4>${card.agentName}</h4>
+                                        <p>${card.agentPosition}</p>
+                                    </div>
+                                </div>`;
+    });
+};
+
+getAPIdata(dataQuery.agents, (data) => {
+  renderAgentsCards(data);
+});
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+});
+////agent
