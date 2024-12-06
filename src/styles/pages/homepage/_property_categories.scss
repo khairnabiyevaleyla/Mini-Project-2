@@ -1,0 +1,21 @@
+#property_categories {
+  font-family: $default_font;
+  margin-top: 50px;
+  padding-top: 30px;
+  .property_categories_header {
+    button {
+      @extend %heading_btn;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .property_categories_title {
+    margin-top: 20px;
+    h3 {
+      font-size: 48px;
+      font-weight: 600;
+      color: $primary_color;
+      letter-spacing: -0.3px;
+    }
+  }
+}

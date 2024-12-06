@@ -171,7 +171,7 @@ table {
   width: 100%;
 }
 
-#about_us .about_body .aboun_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#property_categories .property_categories_header button, #about_us .about_body .aboun_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #about_us .about_body .aboun_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #property_categories .property_categories_header button, #about_us .about_body .aboun_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -472,4 +472,23 @@ table {
     height: 250px;
     margin-top: 100px;
   }
+}
+
+#property_categories {
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+#property_categories .property_categories_header button {
+  font-weight: 400;
+  font-size: 14px;
+}
+#property_categories .property_categories_title {
+  margin-top: 20px;
+}
+#property_categories .property_categories_title h3 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0c0407;
+  letter-spacing: -0.3px;
 }/*# sourceMappingURL=style.css.map */
