@@ -171,7 +171,7 @@ table {
   width: 100%;
 }
 
-#articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -1033,6 +1033,7 @@ table {
   font-family: "Inter", sans-serif;
   margin-top: 100px;
   padding: 20px;
+  overflow: hidden;
 }
 #articles .articles_head {
   display: flex;
@@ -1106,6 +1107,77 @@ table {
   color: #333333;
   font-weight: 500;
 }
+#articles .articles__cards__body__text ul li i {
+  font-size: 16px;
+}
 #articles .articles__cards__body__btn {
   padding: 30px 0;
+}
+#faq {
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+#faq .faq_accordion {
+  width: 800px;
+  margin-left: 50px;
+}
+#faq .faq_accordion__box {
+  position: relative;
+  margin: 10px 20px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#faq .faq_accordion__box__question {
+  position: relative;
+  font-size: 24px;
+  color: #0c0407;
+  font-weight: 600;
+  padding: 10px 10px 0 10px;
+}
+#faq .faq_accordion__box__question::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  font-weight: 200;
+  transition: 0.3s ease;
+}
+#faq .faq_accordion__box__answer {
+  width: 80%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-in-out;
+  padding: 0px 10px 10px 10px;
+}
+#faq .faq_accordion__box__answer p {
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0;
+}
+#faq .faq_accordion__box.active .faq_accordion__box__question::before {
+  content: "-";
+}
+#faq .faq_accordion__box.active .faq_accordion__box__answer {
+  max-height: 500px;
+}
+#faq .faq_head .faq_heading h3 {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #0c0407;
+  letter-spacing: -0.3px;
+}
+@media (max-width: 748px) {
+  #faq .faq_head .faq_heading h3 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -22,6 +22,7 @@ let dataQuery = {
   agents: ` *[_type=="agents"]{agentName, agentPosition, agentImage{asset->{url}},}`,
   testimonials: ` *[_type=="testimonials"]{customerName, testimonialsTitle, testimonialsText, customerAddress, customerImage{asset->{url}},}`,
   articles: ` *[_type=="articles"]{articlesName, articlesDate, articlesDuration, articlesImage{asset->{url}},}`,
+  faq: ` *[_type == "faq"]{question, answer}`,
 };
 
 //////querys
@@ -272,4 +273,35 @@ const renderArticlesCards = (cards) => {
 
 getAPIdata(dataQuery.articles, (data) => {
   renderArticlesCards(data);
+});
+///////articles
+
+////faq
+
+const dataFAQ = document.querySelector(".data-faq");
+
+const renderFAQ = (cards) => {
+  cards &&
+    cards.forEach((card) => {
+      dataFAQ.innerHTML += ` 
+                      <div class="faq_accordion__box">
+                                <div class="faq_accordion__box__question">
+                                   ${card.question}
+                                </div>
+                                <div class="faq_accordion__box__answer">
+                                    <p>${card.answer}</p>
+                                </div>
+                            </div>  `;
+    });
+};
+
+getAPIdata(dataQuery.faq, (data) => {
+  renderFAQ(data);
+  const faqAccordion = document.querySelectorAll(".faq_accordion__box");
+
+  faqAccordion.forEach((box) => {
+    box.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+  });
 });

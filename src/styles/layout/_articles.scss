@@ -2,7 +2,7 @@
   font-family: $default_font;
   margin-top: 100px;
   padding: 20px;
-
+  overflow: hidden;
   .articles_head {
     @include Flexible(space-between, end, row, nowrap, 20px);
     @media (max-width: 748px) {
@@ -66,6 +66,9 @@
             font-size: 14px;
             color: #333333;
             font-weight: 500;
+            i {
+              font-size: 16px;
+            }
           }
         }
       }
