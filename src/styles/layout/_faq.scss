@@ -3,9 +3,14 @@
   margin-top: 50px;
   margin-bottom: 50px;
   padding-bottom: 30px;
+
   .faq_accordion {
     width: 800px;
     margin-left: 50px;
+    @media (max-width: 748px) {
+      width: 400px;
+      margin-left: 0;
+    }
     &__box {
       position: relative;
       margin: 10px 20px;
@@ -15,6 +20,9 @@
       padding: 20px;
       cursor: pointer;
       transition: 0.3s ease;
+      @media (max-width: 748px) {
+        padding: 10px;
+      }
 
       &__question {
         position: relative;
@@ -22,6 +30,10 @@
         color: $primary_color;
         font-weight: 600;
         padding: 10px 10px 0 10px;
+        @media (max-width: 748px) {
+          padding: 10px;
+          font-size: 16px;
+        }
 
         &::before {
           content: "+";
@@ -32,6 +44,10 @@
           font-size: 1.5em;
           font-weight: 200;
           transition: 0.3s ease;
+          @media (max-width: 748px) {
+            right: 10px;
+            top: 40%;
+          }
         }
       }
 
@@ -59,6 +75,10 @@
     }
   }
   .faq_head {
+    @media (max-width: 748px) {
+      text-align: start;
+      margin: 25px;
+    }
     .faq_heading {
       button {
         @extend %heading_btn;

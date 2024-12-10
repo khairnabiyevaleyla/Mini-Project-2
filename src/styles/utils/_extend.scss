@@ -60,6 +60,24 @@
 }
 ////// heading button
 
+////// heading button brown
+%heading_brown_btn {
+  background-color: #241d1f;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $secondary_color;
+  padding: 8px 18px 8px 16px;
+  border: 2px solid #1e1619;
+  border-radius: 35px;
+  @media (max-width: 748px) {
+    font-size: 12px;
+    padding: 6px 16px 6px 14px;
+  }
+}
+////// heading button brown
+
 ////// white button
 %white_btn {
   text-decoration: none;
@@ -68,5 +86,13 @@
   padding: 12px 16px;
   border-radius: 12px;
   border: 1px solid #efefef;
+  font-weight: 500;
+}
+%light_btn {
+  background-color: $secondary_color;
+  color: $primary_color;
+  padding: 16px 30px;
+  font-size: 16px;
+  border-radius: 12px;
   font-weight: 500;
 }
