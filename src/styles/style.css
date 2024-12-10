@@ -130,14 +130,14 @@ table {
   border-spacing: 0;
 }
 
-#about_banner .about_banner_img img, #footer .contact_footer_image img, #articles .articles__cards__top__img img, #testimonials .testimonials_cards .testimonial__card__img img, #our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
+#our_mission .our_mission_img img, #about_banner .about_banner_img img, #footer .contact_footer_image img, #articles .articles__cards__top__img img, #testimonials .testimonials_cards .testimonial__card__img img, #our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#articles .articles_head .articles_btn a, #statistics .statistics_body .statistics_btn a, #choose_us .choose_body .choose_btn a, #about_us .about_body .about_btn a, #featured_properties .explore_btn a, #header .explore_btn a {
+#our_mission .our_mission_body .our_mission_btn a, #articles .articles_head .articles_btn a, #statistics .statistics_body .statistics_btn a, #choose_us .choose_body .choose_btn a, #about_us .about_body .about_btn a, #featured_properties .explore_btn a, #header .explore_btn a {
   display: inline-block;
   position: relative;
   background-color: black;
@@ -149,7 +149,7 @@ table {
   text-decoration: none;
   overflow: hidden;
 }
-#articles .articles_head .articles_btn a::before, #statistics .statistics_body .statistics_btn a::before, #choose_us .choose_body .choose_btn a::before, #about_us .about_body .about_btn a::before, #featured_properties .explore_btn a::before, #header .explore_btn a::before {
+#our_mission .our_mission_body .our_mission_btn a::before, #articles .articles_head .articles_btn a::before, #statistics .statistics_body .statistics_btn a::before, #choose_us .choose_body .choose_btn a::before, #about_us .about_body .about_btn a::before, #featured_properties .explore_btn a::before, #header .explore_btn a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,18 +160,18 @@ table {
   z-index: 1;
   transition: 0.2s ease-in-out;
 }
-#articles .articles_head .articles_btn a span, #statistics .statistics_body .statistics_btn a span, #choose_us .choose_body .choose_btn a span, #about_us .about_body .about_btn a span, #featured_properties .explore_btn a span, #header .explore_btn a span {
+#our_mission .our_mission_body .our_mission_btn a span, #articles .articles_head .articles_btn a span, #statistics .statistics_body .statistics_btn a span, #choose_us .choose_body .choose_btn a span, #about_us .about_body .about_btn a span, #featured_properties .explore_btn a span, #header .explore_btn a span {
   position: relative;
   z-index: 1;
 }
-#articles .articles_head .articles_btn a:hover, #statistics .statistics_body .statistics_btn a:hover, #choose_us .choose_body .choose_btn a:hover, #about_us .about_body .about_btn a:hover, #featured_properties .explore_btn a:hover, #header .explore_btn a:hover {
+#our_mission .our_mission_body .our_mission_btn a:hover, #articles .articles_head .articles_btn a:hover, #statistics .statistics_body .statistics_btn a:hover, #choose_us .choose_body .choose_btn a:hover, #about_us .about_body .about_btn a:hover, #featured_properties .explore_btn a:hover, #header .explore_btn a:hover {
   color: #ffffff;
 }
-#articles .articles_head .articles_btn a:hover::before, #statistics .statistics_body .statistics_btn a:hover::before, #choose_us .choose_body .choose_btn a:hover::before, #about_us .about_body .about_btn a:hover::before, #featured_properties .explore_btn a:hover::before, #header .explore_btn a:hover::before {
+#our_mission .our_mission_body .our_mission_btn a:hover::before, #articles .articles_head .articles_btn a:hover::before, #statistics .statistics_body .statistics_btn a:hover::before, #choose_us .choose_body .choose_btn a:hover::before, #about_us .about_body .about_btn a:hover::before, #featured_properties .explore_btn a:hover::before, #header .explore_btn a:hover::before {
   width: 100%;
 }
 
-#about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -1376,4 +1376,94 @@ table {
 }
 #about_banner .about_banner_img img {
   border-radius: 24px;
+}
+
+#our_mission {
+  font-family: "Inter", sans-serif;
+  margin-top: 80px;
+}
+#our_mission .our_mission_body {
+  width: 540px;
+  height: 450px;
+}
+@media (max-width: 748px) {
+  #our_mission .our_mission_body {
+    padding: 10px;
+  }
+}
+@media (max-width: 748px) {
+  #our_mission .our_mission_body {
+    width: 340px;
+    height: 250px;
+  }
+}
+#our_mission .our_mission_body .our_mission_heading {
+  margin: 20px 0 20px 0;
+}
+#our_mission .our_mission_body .our_mission_heading button {
+  font-weight: 400;
+  font-size: 14px;
+}
+#our_mission .our_mission_body .our_mission_title {
+  margin-bottom: 100px;
+}
+@media (max-width: 748px) {
+  #our_mission .our_mission_body .our_mission_title {
+    margin-bottom: 20px;
+  }
+}
+#our_mission .our_mission_body .our_mission_title h3 {
+  font-size: 48px;
+  color: #0c0407;
+  font-weight: 600;
+}
+@media (max-width: 748px) {
+  #our_mission .our_mission_body .our_mission_title h3 {
+    font-size: 32px;
+  }
+}
+#our_mission .our_mission_body .our_mission_content p {
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: -0.1px;
+  line-height: 22px;
+  font-weight: 400;
+}
+#our_mission .our_mission_body .our_mission_content ul {
+  margin-top: 20px;
+  display: grid;
+  grid-column-gap: 29px;
+  grid-row-gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
+  padding-left: 25px;
+}
+#our_mission .our_mission_body .our_mission_content ul li {
+  letter-spacing: -0.1px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  list-style: inside;
+}
+#our_mission .our_mission_body .our_mission_btn {
+  margin-top: 40px;
+}
+#our_mission .our_mission_img {
+  padding: 40px;
+}
+@media (max-width: 748px) {
+  #our_mission .our_mission_img {
+    padding: 10px;
+  }
+}
+#our_mission .our_mission_img img {
+  width: 540px;
+  height: 450px;
+  border-radius: 20px;
+}
+@media (max-width: 748px) {
+  #our_mission .our_mission_img img {
+    width: 340px;
+    height: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */
