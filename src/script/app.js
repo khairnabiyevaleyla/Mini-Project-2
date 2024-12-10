@@ -24,6 +24,7 @@ let dataQuery = {
   articles: ` *[_type=="articles"]{articlesName, articlesDate, articlesDuration, articlesImage{asset->{url}},}`,
   faq: ` *[_type == "faq"]{question, answer}`,
   agentspage: ` *[_type=="agentspage"]{agentName, agentPosition, agentImage{asset->{url}},}`,
+  services: ` *[_type=="services"]{icon, title, text,}`,
 };
 
 //////querys
@@ -334,3 +335,25 @@ getAPIdata(dataQuery.agentspage, (data) => {
 });
 
 ////agentpage
+
+//////services
+
+const dataServicesCards = document.querySelector(".data-services-cards");
+
+const renderServicesCards = (cards) => {
+  cards &&
+    cards.forEach((card) => {
+      dataServicesCards.innerHTML += ` <div class="col-xl-4">
+                        <div class="service_card">
+                            ${card.icon}
+                            <h3>${card.title}</h3>
+                            <p>${card.text}</p>
+                        </div>
+                    </div>
+                        </div>`;
+    });
+};
+
+getAPIdata(dataQuery.services, (data) => {
+  renderServicesCards(data);
+});

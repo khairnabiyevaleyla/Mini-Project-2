@@ -1,0 +1,29 @@
+#services_cards {
+  font-family: $default_font;
+  margin-top: 30px;
+  padding-top: 20px;
+  .service_card {
+    width: 370px;
+    height: 330px;
+    background-color: $secondary_color;
+    border: 1px solid #e8e8e8;
+    padding: 25px;
+    border-radius: 20px;
+    i {
+      font-size: 50px;
+    }
+    h3 {
+      margin-top: 50px;
+      font-size: 32px;
+      color: $primary_color;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+      color: $body_color;
+      line-height: 22px;
+      padding-bottom: 20px;
+    }
+  }
+}

@@ -171,7 +171,7 @@ table {
   width: 100%;
 }
 
-#agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#services_head .services_head_header button, #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #services_head .services_head_header button, #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -1629,4 +1629,62 @@ table {
 #agents_page .agent_card .agent_text p {
   font-size: 14px;
   color: #0c0407;
+}
+
+#services_head {
+  font-family: "Inter", sans-serif;
+  margin-top: 60px;
+}
+#services_head .services_head_header button i {
+  font-size: 20px;
+}
+@media (max-width: 748px) {
+  #services_head .services_head_header button i {
+    font-size: 16px;
+  }
+}
+#services_head .services_head_title {
+  margin-top: 10px;
+}
+#services_head .services_head_title h1 {
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0c0407;
+  letter-spacing: -0.08em;
+}
+@media (max-width: 748px) {
+  #services_head .services_head_title h1 {
+    font-size: 60px;
+  }
+}
+
+#services_cards {
+  font-family: "Inter", sans-serif;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+#services_cards .service_card {
+  width: 370px;
+  height: 330px;
+  background-color: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  padding: 25px;
+  border-radius: 20px;
+}
+#services_cards .service_card i {
+  font-size: 50px;
+}
+#services_cards .service_card h3 {
+  margin-top: 50px;
+  font-size: 32px;
+  color: #0c0407;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#services_cards .service_card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
