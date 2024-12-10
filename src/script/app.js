@@ -23,6 +23,7 @@ let dataQuery = {
   testimonials: ` *[_type=="testimonials"]{customerName, testimonialsTitle, testimonialsText, customerAddress, customerImage{asset->{url}},}`,
   articles: ` *[_type=="articles"]{articlesName, articlesDate, articlesDuration, articlesImage{asset->{url}},}`,
   faq: ` *[_type == "faq"]{question, answer}`,
+  agentspage: ` *[_type=="agentspage"]{agentName, agentPosition, agentImage{asset->{url}},}`,
 };
 
 //////querys
@@ -305,3 +306,31 @@ getAPIdata(dataQuery.faq, (data) => {
     });
   });
 });
+
+////agentpage
+
+const dataAgentsPageCards = document.querySelector(".data-agent-page");
+
+const renderAgentsPageCards = (cards) => {
+  cards &&
+    cards.forEach((card) => {
+      dataAgentsPageCards.innerHTML += ` <div class="col-xl-4">
+                            <div class="agent_card ">
+                                <div class="agent_img">
+                                    <img
+                                        src="${card.agentImage.asset.url}">
+                                </div>
+                                <div class="agent_text">
+                                    <h4>${card.agentName}</h4>
+                                    <p>${card.agentPosition}</p>
+                                </div>
+                            </div>
+                        </div>`;
+    });
+};
+
+getAPIdata(dataQuery.agentspage, (data) => {
+  renderAgentsPageCards(data);
+});
+
+////agentpage

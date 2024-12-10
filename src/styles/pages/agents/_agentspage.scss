@@ -1,0 +1,37 @@
+#agents_page {
+  font-family: $default_font;
+  margin-top: 30px;
+  padding-bottom: 60px;
+  .agent_card {
+    width: 370px;
+    height: 420px;
+    margin-top: 50px;
+    padding-top: 50px;
+    .agent_img {
+      overflow: hidden;
+      border-radius: 20px;
+      img {
+        border-radius: 20px;
+        @extend %base_img;
+        transition: 0.5s ease-in-out;
+      }
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+    .agent_text {
+      margin-top: 10px;
+      text-align: start;
+      line-height: 28px;
+      h4 {
+        font-size: 24px;
+        color: $primary_color;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14px;
+        color: $primary_color;
+      }
+    }
+  }
+}

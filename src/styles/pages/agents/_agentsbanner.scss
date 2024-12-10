@@ -1,0 +1,28 @@
+#agents_banner {
+  font-family: $default_font;
+  margin-top: 60px;
+  .agents_banner_header {
+    button {
+      @extend %heading_btn;
+      i {
+        font-size: 20px;
+        @media (max-width: 748px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .agents_banner_title {
+    margin-top: 10px;
+    h1 {
+      font-size: 200px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $primary_color;
+      letter-spacing: -0.08em;
+      @media (max-width: 748px) {
+        font-size: 60px;
+      }
+    }
+  }
+}

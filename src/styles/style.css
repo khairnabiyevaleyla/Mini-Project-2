@@ -130,7 +130,7 @@ table {
   border-spacing: 0;
 }
 
-#our_mission .our_mission_img img, #about_banner .about_banner_img img, #footer .contact_footer_image img, #articles .articles__cards__top__img img, #testimonials .testimonials_cards .testimonial__card__img img, #our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
+#agents_page .agent_card .agent_img img, #our_mission .our_mission_img img, #about_banner .about_banner_img img, #footer .contact_footer_image img, #articles .articles__cards__top__img img, #testimonials .testimonials_cards .testimonial__card__img img, #our_process .our_process_img img, #choose_us .choose_img img, #property_categories .property_categories__card__top__img img, #about_us .about_img img, #featured_properties .propertie_card__top__img a img, #banner .banner_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -171,7 +171,7 @@ table {
   width: 100%;
 }
 
-#our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -1564,4 +1564,69 @@ table {
   font-size: 14px;
   color: #333;
   line-height: 22px;
+}
+
+#agents_banner {
+  font-family: "Inter", sans-serif;
+  margin-top: 60px;
+}
+#agents_banner .agents_banner_header button i {
+  font-size: 20px;
+}
+@media (max-width: 748px) {
+  #agents_banner .agents_banner_header button i {
+    font-size: 16px;
+  }
+}
+#agents_banner .agents_banner_title {
+  margin-top: 10px;
+}
+#agents_banner .agents_banner_title h1 {
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0c0407;
+  letter-spacing: -0.08em;
+}
+@media (max-width: 748px) {
+  #agents_banner .agents_banner_title h1 {
+    font-size: 60px;
+  }
+}
+
+#agents_page {
+  font-family: "Inter", sans-serif;
+  margin-top: 30px;
+  padding-bottom: 60px;
+}
+#agents_page .agent_card {
+  width: 370px;
+  height: 420px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+#agents_page .agent_card .agent_img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+#agents_page .agent_card .agent_img img {
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+#agents_page .agent_card .agent_img:hover img {
+  transform: scale(1.1);
+}
+#agents_page .agent_card .agent_text {
+  margin-top: 10px;
+  text-align: start;
+  line-height: 28px;
+}
+#agents_page .agent_card .agent_text h4 {
+  font-size: 24px;
+  color: #0c0407;
+  font-weight: 500;
+}
+#agents_page .agent_card .agent_text p {
+  font-size: 14px;
+  color: #0c0407;
 }/*# sourceMappingURL=style.css.map */

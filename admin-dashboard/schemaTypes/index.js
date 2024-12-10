@@ -6,6 +6,7 @@ import agents from './agents'
 import testimonials from './testimonials'
 import articles from './articles'
 import faq from './faq'
+import agentspage from './agentspage'
 
 export const schemaTypes = [
   featuredproperties,
@@ -16,4 +17,5 @@ export const schemaTypes = [
   testimonials,
   articles,
   faq,
+  agentspage,
 ]
