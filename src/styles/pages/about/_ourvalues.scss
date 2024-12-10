@@ -1,0 +1,88 @@
+#our_values {
+  font-family: $default_font;
+  margin-top: 50px;
+  .our_values_body {
+    width: 540px;
+    height: 450px;
+    padding: 0 35px;
+    @media (max-width: 748px) {
+      padding: 10px;
+    }
+    @media (max-width: 748px) {
+      width: 340px;
+      height: 250px;
+    }
+    .our_values_heading {
+      margin: 20px 0 20px 0;
+      button {
+        @extend %heading_btn;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      @media (max-width: 748px) {
+        margin-top: 100px;
+      }
+    }
+    .our_values_title {
+      margin-bottom: 10px;
+      @media (max-width: 748px) {
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 48px;
+        color: $primary_color;
+        font-weight: 600;
+        @media (max-width: 748px) {
+          font-size: 32px;
+        }
+      }
+    }
+    .our_values_content {
+      ul {
+        li {
+          font-size: 14px;
+          font-weight: 600;
+          color: $body_color;
+          line-height: 28px;
+          list-style: inside;
+        }
+      }
+    }
+    .our_values_btn {
+      margin-top: 30px;
+      a {
+        @extend %black_btn;
+      }
+    }
+  }
+  .our_values_container {
+    @include Flexible(center, center, row, wrap, 10px);
+    @media (max-width: 748px) {
+      margin-top: 60px;
+    }
+    .our_values_cards {
+      width: 260px;
+      height: 260px;
+      background-color: $secondary_color;
+      border: 1px solid #e8e8e8;
+      padding: 25px;
+      border-radius: 20px;
+      i {
+        font-size: 50px;
+      }
+      h3 {
+        margin-top: 20px;
+        font-size: 24px;
+        color: $primary_color;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: $body_color;
+        line-height: 22px;
+      }
+    }
+  }
+}
