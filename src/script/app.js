@@ -269,7 +269,7 @@ const renderArticlesCards = (cards) => {
                                 </div>
                                 <div class="articles__cards__body__btn">
                                     <div class="articles_btn">
-                                        <a href="#"><span>Read more</span></a>
+                                        <a href="blogsinglepage.html?id=${card._id}"><span>Read more</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -387,7 +387,7 @@ const renderAllArticlesCards = (cards) => {
                                 </div>
                                 <div class="articles__cards__body__btn">
                                     <div class="articles_btn">
-                                        <a href="#"><span>Read more</span></a>
+                                        <a href="blogsinglepage.html?id=${card._id}"><span>Read more</span></a>
                                     </div>
                                 </div>
                             </div>
