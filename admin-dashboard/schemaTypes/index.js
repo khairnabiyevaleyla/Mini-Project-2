@@ -9,6 +9,7 @@ import faq from './faq'
 import agentspage from './agentspage'
 import services from './services'
 import allarticles from './allarticles'
+import allproperties from './allproperties'
 
 export const schemaTypes = [
   featuredproperties,
@@ -22,4 +23,5 @@ export const schemaTypes = [
   agentspage,
   services,
   allarticles,
+  allproperties,
 ]
