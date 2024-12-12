@@ -34,7 +34,7 @@
                                         <ul class="dropdown_menu">
                                             <li><a href="agents.html">agents</a></li>
                                             <li><a href="services.html">services</a></li>
-                                            <li><a href="realtor.html">realtor</a></li>
+                                            <li><a href="#">realtor</a></li>
                                             <li><a href="#">contact</a></li>
                                             <li><a href="#">admin</a></li>
                                         </ul>
@@ -54,143 +54,103 @@
         </nav>
     </header>
     <main>
-        <section id="services_head">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="services_head_header">
-                        <button><i class="ri-home-5-line"></i> our services</button>
-                    </div>
-                    <div class="services_head_title">
-                        <h1>Services</h1>
-                    </div>
 
+        <section id="application">
+            <div class="container">
+                <div class="row p-2 text-center mt-3">
+                    <h2>Apply as a Realtor</h2>
+                </div>
+                <div class="row justify-content-center align-items-center g-2 m-3">
+
+                    <div class="form_box">
+                        <form action="#">
+                            <div class="title">
+                                <h4>Fill all the information
+                                </h4>
+                            </div>
+                            <div class="user_details">
+
+                                <div class="input-box">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" name="firstname" id="firstname" placeholder="First Name"
+                                        required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="zipcode">Zip Code</label>
+                                    <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="address">Address</label>
+                                    <input type="text" name="address" id="address" placeholder="Address" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="city" placeholder="City" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="country">Country</label>
+                                    <input type="text" name="country" id="country" placeholder="Country" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="experience">Experience
+                                    </label>
+                                    <input type="text" name="experience" id="experience" placeholder="Experience"
+                                        required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="education">Education</label>
+                                    <input type="text" name="education" id="education" placeholder="Education" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="license">License Expiry
+                                    </label>
+                                    <input type="date" name="license" id="license" placeholder="License Expiry
+                                " required>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <input type="checkbox" id="checkbox" name="checkbox">
+                                <label for="checkbox">Are you affiliated with a real estate brokerage?</label>
+                            </div>
+                            <div class="answer">
+                                <label for="brokeragename">Brokerage Name</label>
+                                <input type="text" id="brokeragename" name="brokeragename" placeholder="Brokerage Name">
+                            </div>
+                            <div class="submit_btn">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="services_cards">
-            <div class="container">
-                <div class="row g-3 data-services-cards">
-                </div>
-            </div>
-        </section>
-        <section id="choose_us">
-            <div class="container">
-                <div class="row g-5  justify-content-center align-items-center">
-                    <div class="col-xl-6 col-md-6 col-sm-6">
-                        <div class="choose_img">
-                            <img
-                                src="https://cdn.prod.website-files.com/670010141e02b62e6f054e13/67160aef4db775dfa018cac7_choose-thumb-1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-6 col-sm-6">
-                        <div class="choose_body">
-                            <div class="choose_heading">
-                                <button>why choose us</button>
-                            </div>
-                            <div class="choose_title">
-                                <h3>Why we are best in <br> Real-Estate market?</h3>
-                            </div>
-                            <div class="choose_content">
-                                <p>With our unmatched expertise, personalized service, and deep knowledge of the real
-                                    estate market, we make your home buying or selling experience seamless and
-                                    stress-free. Our dedicated team of professionals listens to your needs, provides
-                                    tailored.
-                                </p>
-                            </div>
-                            <div class="choose_btn">
-                                <a href="#"><span>Contact us</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="articles">
+        <section id="faq">
             <div class="container">
                 <div class="row">
-                    <div class="articles_head">
-                        <div class="articles_heading">
-                            <button>articles</button>
-                            <h3>Read our latest blogs</h3>
+                    <div class="col-xl-4 col-sm-4">
+                        <div class="faq_head">
+                            <div class="faq_heading">
+                                <button>FAQ</button>
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
                         </div>
-                        <div class="articles_btn">
-                            <a href="#"><span>Explore us</span></a>
+                    </div>
+                    <div class="col-xl-8 col-sm-8">
+                        <div class="faq_accordion data-faq">
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center data-articles-cards">
-                </div>
-            </div>
-        </section>
-        <section id="testimonials">
-            <div class="container">
-                <div class="row text-center ">
-                    <div class="testimonials_header">
-                        <button>testimonials</button>
-                    </div>
-                    <div class="testimonials_title">
-                        <h3>Real stories from happy <br>homeownerss</h3>
-                    </div>
 
-                </div>
-                <div class="row justify-content-center align-items-center m-1">
-                    <div class="swiper mySwiper testimonials_cards">
-                        <div class="swiper-wrapper data_testimonials_cards">
-                            <!--  <div class="swiper-slide">
-                                <div class="testimonial__card">
-                                    <div class="testimonial__card__content">
-                                        <h2>"flkljfjr"
-                                        </h2>
-                                        <p>vljlfflj
-                                        </p>
-                                        <h3>$fgrggr</h3>
-                                        <span>grgrr</span>
-                                    </div>
-                                    <div class="testimonial__card__img">
-                                        <img
-                                            src="	https://cdn.prod.website-files.com/670010141e02b62…e2dba4f045e5fbe423_testimonials-thumb-2-p-500.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial__card">
-                                    <div class="testimonial__card__content">
-                                        <h2>"flkljfjr"
-                                        </h2>
-                                        <p>vljlfflj
-                                        </p>
-                                        <h3>$fgrggr</h3>
-                                        <span>grgrr</span>
-                                    </div>
-                                    <div class="testimonial__card__img">
-                                        <img
-                                            src="	https://cdn.prod.website-files.com/670010141e02b62…e2dba4f045e5fbe423_testimonials-thumb-2-p-500.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial__card">
-                                    <div class="testimonial__card__content">
-                                        <h2>"flkljfjr"
-                                        </h2>
-                                        <p>vljlfflj
-                                        </p>
-                                        <h3>$fgrggr</h3>
-                                        <span>grgrr</span>
-                                    </div>
-                                    <div class="testimonial__card__img">
-                                        <img
-                                            src="	https://cdn.prod.website-files.com/670010141e02b62…e2dba4f045e5fbe423_testimonials-thumb-2-p-500.jpg">
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
+            </div>
+            </div>
         </section>
     </main>
 
@@ -245,7 +205,7 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="">Contact</a></li>
-                            <li><a href="realtor.html">Realtor</a></li>
+                            <li><a href="">Realtor</a></li>
                             <li><a href="">Privacy Policy</a></li>
                         </ul>
                     </div>
