@@ -1,0 +1,85 @@
+#contact_banner {
+  font-family: $default_font;
+  margin-top: 60px;
+  overflow: hidden;
+  .banner_header {
+    button {
+      @extend %heading_btn;
+      i {
+        font-size: 20px;
+        @media (max-width: 748px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .banner_title {
+    margin-top: 10px;
+    h1 {
+      font-size: 200px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $primary_color;
+      letter-spacing: -0.08em;
+      @media (max-width: 748px) {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+#contact_info {
+  font-family: $default_font;
+  margin-top: 50px;
+  overflow: hidden;
+  .contact_card {
+    width: 370px;
+    height: 140px;
+    background-color: $secondary_color;
+    border: 1px solid #e8e8e8;
+    padding: 25px;
+    border-radius: 20px;
+    @include Flexible(flex-start, start, row, nowrap, 10px);
+    &__icon {
+      i {
+        font-size: 35px;
+      }
+    }
+    &__text {
+      padding-bottom: 10px;
+      h3 {
+        font-size: 24px;
+        color: $primary_color;
+        font-weight: 600;
+      }
+      p {
+        font-size: 16px;
+        color: $body_color;
+        line-height: 22px;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+#contact_map {
+  padding: 20px;
+  @media (max-width: 748px) {
+    padding: 10px;
+  }
+  .google-map {
+    padding: 20px;
+    @media (max-width: 748px) {
+      margin-top: 10px;
+    }
+    iframe {
+      width: 1200px;
+      height: 600px;
+      border-radius: 24px;
+      @media (max-width: 748px) {
+        width: 350px;
+        height: 200px;
+      }
+    }
+  }
+}

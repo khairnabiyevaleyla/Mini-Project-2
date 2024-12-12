@@ -171,7 +171,7 @@ table {
   width: 100%;
 }
 
-#services_head .services_head_header button, #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+#contact_banner .banner_header button, #services_head .services_head_header button, #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
@@ -183,7 +183,7 @@ table {
   border-radius: 35px;
 }
 @media (max-width: 748px) {
-  #services_head .services_head_header button, #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
+  #contact_banner .banner_header button, #services_head .services_head_header button, #agents_banner .agents_banner_header button, #our_values .our_values_body .our_values_heading button, #our_mission .our_mission_body .our_mission_heading button, #about_banner .about_banner_header button, #faq .faq_head .faq_heading button, #articles .articles_head .articles_heading button, #testimonials .testimonials_header button, #agents .agents_header button, #our_process .our_process_heading button, #our_process .our_process_header button, #statistics .statistics_body .statistics_heading button, #choose_us .choose_body .choose_heading button, #property_categories .property_categories_header button, #about_us .about_body .about_heading button, #featured_properties .featured_properties_header button, #banner .banner_header button {
     font-size: 12px;
     padding: 6px 16px 6px 14px;
   }
@@ -1796,4 +1796,98 @@ table {
   background-color: #0c0407;
   color: #f7f7f7;
   font-weight: 600;
+}
+
+#contact_banner {
+  font-family: "Inter", sans-serif;
+  margin-top: 60px;
+  overflow: hidden;
+}
+#contact_banner .banner_header button i {
+  font-size: 20px;
+}
+@media (max-width: 748px) {
+  #contact_banner .banner_header button i {
+    font-size: 16px;
+  }
+}
+#contact_banner .banner_title {
+  margin-top: 10px;
+}
+#contact_banner .banner_title h1 {
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0c0407;
+  letter-spacing: -0.08em;
+}
+@media (max-width: 748px) {
+  #contact_banner .banner_title h1 {
+    font-size: 60px;
+  }
+}
+
+#contact_info {
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  overflow: hidden;
+}
+#contact_info .contact_card {
+  width: 370px;
+  height: 140px;
+  background-color: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#contact_info .contact_card__icon i {
+  font-size: 35px;
+}
+#contact_info .contact_card__text {
+  padding-bottom: 10px;
+}
+#contact_info .contact_card__text h3 {
+  font-size: 24px;
+  color: #0c0407;
+  font-weight: 600;
+}
+#contact_info .contact_card__text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 22px;
+  padding-top: 20px;
+}
+
+#contact_map {
+  padding: 20px;
+}
+@media (max-width: 748px) {
+  #contact_map {
+    padding: 10px;
+  }
+}
+#contact_map .google-map {
+  padding: 20px;
+}
+@media (max-width: 748px) {
+  #contact_map .google-map {
+    margin-top: 10px;
+  }
+}
+#contact_map .google-map iframe {
+  width: 1200px;
+  height: 600px;
+  border-radius: 24px;
+}
+@media (max-width: 748px) {
+  #contact_map .google-map iframe {
+    width: 350px;
+    height: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
