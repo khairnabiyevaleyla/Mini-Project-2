@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'allproperties',
-  title: 'All properties',
+  name: 'browseproperties',
+  title: 'Browse properties',
   type: 'document',
   fields: [
     defineField({
@@ -45,6 +45,16 @@ export default defineType({
       title: 'Properties garage counts',
       type: 'string',
     }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+    }),
+
     defineField({
       name: 'mainImage',
       title: 'Main image',

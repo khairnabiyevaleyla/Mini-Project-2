@@ -10,6 +10,7 @@ import agentspage from './agentspage'
 import services from './services'
 import allarticles from './allarticles'
 import allproperties from './allproperties'
+import browseproperties from './browseproperties'
 
 export const schemaTypes = [
   featuredproperties,
@@ -24,4 +25,5 @@ export const schemaTypes = [
   services,
   allarticles,
   allproperties,
+  browseproperties,
 ]

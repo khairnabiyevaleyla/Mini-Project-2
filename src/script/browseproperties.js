@@ -1,6 +1,4 @@
-const dataAllPropertiesCards = document.querySelector(
-  ".data-all-properties-cards"
-);
+/* let featuredPropertiesQuery = `*[_type == "featuredproperties"]`; */
 
 function dynamicFeaturedQuery(query) {
   let PROJECT_ID = "nqm8u0oz";
@@ -8,9 +6,18 @@ function dynamicFeaturedQuery(query) {
   return `https://${PROJECT_ID}.api.sanity.io/v2023-05-03/data/query/${DATASET}?query=${query}`;
 }
 
-let dataQuery = {
-  allproperties: `*[_type=="allproperties"]{_id, propertiesName, propertiesAddress, propertiesTag, propertiesPrice, propertiesArea, propertiesRoomsCount, propertiesBathroomsCount, propertiesGarageCounts, mainImage{asset->{url}}}`,
+function urlFor(source) {
+  return builder.image(source);
+}
+//////querys
+let dataBrowseQuery = {
+  browseproperties: `*[_type=="browseproperties"]{propertiesName, propertiesAddress,
+    propertiesTag, propertiesPrice, propertiesArea,
+    propertiesRoomsCount, propertiesBathroomsCount, propertiesGarageCounts, mainImage{asset->{url}},}
+   `,
 };
+
+//////querys
 
 async function getAPIdata(featuredQuery, cb) {
   let url = dynamicFeaturedQuery(featuredQuery);
@@ -18,18 +25,18 @@ async function getAPIdata(featuredQuery, cb) {
     .then((res) => res.json())
     .then((res) => cb(res.result));
 }
-
-const renderAllPropertiesCards = (cards) => {
+////// featured_properties
+const dataBrowseCards = document.querySelector(".data-browse-cards");
+const renderBrowseCards = (cards) => {
   cards &&
     cards.forEach((card) => {
-      dataAllPropertiesCards.innerHTML += `<div class="col-xl-4 col-sm-12">
+      dataBrowseCards.innerHTML += `<div class="col-xl-4 col-md-6 col-sm-12">
                               <div class="propertie_card">
                                   <div class="propertie_card__top">
                                       <div class="propertie_card__top__img">
-                                          <!-- Динамическая генерация ссылки с параметром id -->
-                                          <a href="productsinglepage.html?id=${card._id}">
-                                            <img src="${card.mainImage.asset.url}">
-                                          </a>
+                                          <a href="#"> <img
+                                                  src="${card.mainImage.asset.url}"></a>
+  
                                       </div>
                                   </div>
                               </div>
@@ -51,6 +58,8 @@ const renderAllPropertiesCards = (cards) => {
     });
 };
 
-getAPIdata(dataQuery.allproperties, (data) => {
-  renderAllPropertiesCards(data);
+getAPIdata(dataBrowseQuery.browseproperties, (data) => {
+  renderBrowseCards(data);
 });
+
+//////featured_properties
