@@ -30,6 +30,7 @@
 
 #all_properties {
   font-family: $default_font;
+
   .propertie_card {
     margin-top: 30px;
     width: 380px;
@@ -101,6 +102,52 @@
     @include Flexible(center, center, row, nowrap, 0);
     a {
       @extend %black_btn;
+    }
+  }
+  .search-form {
+    margin-left: 50px;
+    @media (max-width: 748px) {
+      margin-left: 0;
+    }
+    .input-box {
+      background-color: $secondary_color;
+      padding: 25px 30px;
+      border-radius: 28px;
+      margin: 20px 0 10px 0;
+      width: 90%;
+      border: 1px solid #e8e8e8;
+      @include Flexible(center, center, row, nowrap, 0);
+      position: relative;
+      @media (max-width: 748px) {
+        width: 100%;
+        padding: 20px 25px;
+      }
+      input {
+        border: 1px solid #e8e8e8;
+        border-radius: 12px;
+        width: 100%;
+        height: 48px;
+        margin-bottom: 0;
+        padding: 13px 20px 14px;
+        outline: NONE;
+        font-size: 14px;
+        color: $primary_color;
+      }
+      button {
+        background-color: $primary_color;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        right: 3.4%;
+        @media (max-width: 748px) {
+          right: 8%;
+        }
+        i {
+          color: #ffffff;
+          font-size: 20px;
+        }
+      }
     }
   }
 }

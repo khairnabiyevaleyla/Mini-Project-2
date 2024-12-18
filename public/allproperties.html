@@ -69,6 +69,16 @@
 
         <section id="all_properties">
             <div class="container">
+                <div class="row mb-5">
+                    <form action="/allproperties.html" method="get" class="search-form">
+                        <div class="input-box">
+                            <input type="text" name="search" id="search" placeholder="Search...">
+                            <button type="submit" name="submit" id="submit">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
                 <div class="row data-all-properties-cards">
                 </div>
                 <div class="row p-5">
@@ -217,6 +227,8 @@
         <script src="../node_modules/axios/dist/axios.min.js"></script>
         <script src="/src/script/allproperties.js"></script>
         <script src="/src/script/faq.js"></script>
+        <script src="/src/script/search.js"></script>
+
 
 
 

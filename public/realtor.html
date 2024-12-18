@@ -63,7 +63,7 @@
                 <div class="row justify-content-center align-items-center g-2 m-3">
 
                     <div class="form_box">
-                        <form action="#">
+                        <form action="submit" id="contactForm">
                             <div class="title">
                                 <h4>Fill all the information
                                 </h4>
@@ -127,8 +127,12 @@
                             <div class="submit_btn">
                                 <button type="submit">Send Message</button>
                             </div>
+                            <div id="successMessage" style="display: none; margin-top: 20px; color: green;">
+                                Form has been successfully submitted!
+                            </div>
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -269,6 +273,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../node_modules/axios/dist/axios.min.js"></script>
     <script src="/src/script/faq.js"></script>
+    <script src="/src/script/formsubmition.js"></script>
 
 </body>
 
