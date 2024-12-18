@@ -1597,7 +1597,7 @@ table {
 #agents_page {
   font-family: "Inter", sans-serif;
   margin-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 #agents_page .agent_card {
   width: 370px;
@@ -1629,6 +1629,25 @@ table {
 #agents_page .agent_card .agent_text p {
   font-size: 14px;
   color: #0c0407;
+}
+#agents_page .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-top: 100px;
+  padding: 40px;
+}
+#agents_page .pagination button {
+  background-color: black;
+  color: #ffffff;
+  padding: 16px 30px;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  border: none;
 }
 
 #services_head {

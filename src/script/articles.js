@@ -9,7 +9,7 @@ function urlFor(source) {
 }
 //////querys
 let dataArticlesQuery = {
-  articles: ` *[_type=="articles"]{articlesName, articlesDate, articlesDuration, articlesImage{asset->{url}},}`,
+  articles: ` *[_type=="articles"]{_id, articlesName, articlesDate, articlesDuration, articlesImage{asset->{url}},}`,
 };
 
 //////querys
