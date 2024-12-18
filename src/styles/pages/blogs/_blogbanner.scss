@@ -82,4 +82,18 @@
       }
     }
   }
+  .pagination {
+    @include Flexible(center, center, row, nowrap, 10px);
+    margin-top: 50px;
+    padding: 40px;
+    button {
+      background-color: $black;
+      color: #ffffff;
+      padding: 16px 30px;
+      font-size: 16px;
+      border-radius: 12px;
+      font-weight: 500;
+      border: none;
+    }
+  }
 }
