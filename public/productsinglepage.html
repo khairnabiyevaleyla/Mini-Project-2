@@ -40,13 +40,15 @@
                                         </ul>
                                     </a></li>
                                 <li><a href="blogs.html">blog</a></li>
-                                <li><a href="#">cart(<span class="items_count">0</span>)</a></li>
+                                <li><a href="#" id="cartLink">cart(<span class="items_count">0</span>)</a></li>
+
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-2">
                         <div class="explore_btn">
-                            <a href="#"><span>Explore all</span></a>
+                            <a href="allproperties.html"><span>Explore all</span></a>
                         </div>
                     </div>
                 </div>
@@ -229,7 +231,7 @@
                                         <h3>$ 400 </h3> -->
                                     </div>
                                     <div class="product_price__btn">
-                                        <button type="submit">Add to cart</button>
+                                        <button type="submit" id="addToCartBtn">Add to cart</button>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -239,17 +241,15 @@
                                 <div class="user_details">
                                     <div class="input-box">
                                         <label for="fullname">Full Name</label>
-                                        <input type="text" name="firstname" id="firstname" placeholder="Full Name"
-                                            required>
+                                        <input type="text" name="firstname" id="firstname" placeholder="Full Name">
                                     </div>
                                     <div class="input-box">
                                         <label for="email">Email Address</label>
-                                        <input type="email" name="email" id="email" placeholder="Email Address"
-                                            required>
+                                        <input type="email" name="email" id="email" placeholder="Email Address">
                                     </div>
                                     <div class="input-box">
                                         <label for="phone">Phone</label>
-                                        <input type="text" name="lastname" id="lastname" placeholder="Phone" required>
+                                        <input type="text" name="lastname" id="lastname" placeholder="Phone">
                                     </div>
                                     <div class="request-box">
                                         <button type="submit"> Request info</button>
@@ -412,7 +412,7 @@
         <script src="/src/script/app.js"></script>
         <script src="/src/script/propertiedetail.js"></script>
         <script src="/src/script/browseproperties.js"></script>
-
+        <script src="/src/script/addtocart.js"></script>
 
 </body>
 

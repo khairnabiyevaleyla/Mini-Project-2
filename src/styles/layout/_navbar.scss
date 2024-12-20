@@ -63,6 +63,41 @@
           transform: rotate(180deg);
         }
       }
+      #cartModal {
+        margin: 60px;
+        width: 340px;
+        height: 220px;
+        background-color: $secondary_color;
+        border-radius: 28px;
+        color: $primary_color;
+        padding: 40px;
+        .modal_content {
+          @include Flexible(flex-start, start, column, 40px);
+          span {
+            font-size: 40px;
+          }
+          h3 {
+            font-size: 18px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 20px;
+            font-weight: 400;
+            padding: 20px 0;
+          }
+          button {
+            @extend %white_btn;
+            border: none;
+          }
+          .checkout_btn {
+            @extend %light_btn;
+            margin-top: 20px;
+            background-color: $primary_color;
+            color: #f2f2f2;
+            border: none;
+          }
+        }
+      }
     }
   }
   .explore_btn {
